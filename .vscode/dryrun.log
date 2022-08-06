@@ -1,0 +1,13 @@
+make.exe --dry-run --keep-going --print-directory
+make.exe: Entering directory 'd:/ALIVE'
+gcc -E other.c
+gcc -E main.c
+gcc -S other.c
+gcc -S main.c
+ 
+as other.s -o other.o
+as main.s -o main.o
+gcc other.o main.o
+./a.out
+make.exe: Leaving directory 'd:/ALIVE'
+ 
